@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navpreet Kaur | Portfolio</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1>Navpreet Kaur</h1>
+            <p>Web Design Student</p>
+                <p>Email: navpreetchahal5504@gmail.com</p>
+                <p>Location: Barrie, Ontario</p>
+
+            <button onclick="toggleDarkMode()" class="btn">Dark Mode</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <!-- About -->
+            <section>
+                <h2>About Me</h2>
+                <p id="aboutText">I am a student learning web development.</p>
+                <button onclick="changeText()" class="btn">Change Text</button>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <div class="content-header">
+                <div class="circle-icon"></div>
+                  <h2>Projects</h2>
+                </div>
+                
+                <div class="portfolio-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <h3>About User Form(Lab A)</h3>
+                    <p>Structured HTML form using semantic elements and validation.</p>
+                    <a href="https://github.com/navpreetchahal5504-hue/lab-a"
+                       target="_blank"
+                       class="btn">
+                       View on GitHub
+                    </a>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <h3>Resume Website (Assignment 1)</h3>
+                    <p>Personal resume webpage using HTML.</p>
+                    <a href="https://github.com/navpreetchahal5504-hue/assignment-1"
+                       target="_blank"
+                       class="btn">
+                       View on GitHub
+                    </a>
+                </article>
+                </div>    
+            </section>
+        
+        <!-- CONTACT -->
+        <section>
+            <div class="content-header">
+                <h2>Contact</h2>
+            </div>
+
+            <form onsubmit="showName(event)">
+                <input type="text" id="nameInput" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <p id="output"></p>
+        </section>
+            
+        <footer>
+              © 2026 Navpreet Kaur
+        </footer>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
